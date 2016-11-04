@@ -1,6 +1,6 @@
 {
   "name": "ng2-bootstrap-growl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Service to show growl with Twitter Bootsrap 4",
   "main": "index.js",
   "scripts": {
@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/mbenzenhoefer/ng2-bootstrap-growl#readme",
   "dependencies": {
-    "@angular/core": "~2.0.2",
+    "@angular/core": "~2.1.2",
     "rxjs": "5.0.0-beta.12"
   },
   "devDependencies": {
     "@types/core-js": "^0.9.34",
-    "typescript": "^2.0.3"
+    "typescript": "^2.0.6"
   },
   "typings": "./ng2-bootstrap-growl.d.ts"
 }
