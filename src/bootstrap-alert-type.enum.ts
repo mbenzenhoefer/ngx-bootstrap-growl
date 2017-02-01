@@ -1,4 +1,4 @@
-export enum BootstrapAlertType{
+export enum BootstrapAlertType {
     SUCCESS,
     INFO,
     WARNING,

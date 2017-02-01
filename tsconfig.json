@@ -9,7 +9,7 @@
         "declaration": true
     },
     "files": [
-        "ng2-bootstrap-growl.ts"
+      "index.ts"
     ],
     "exclude": [
         "node_modules"

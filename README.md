@@ -12,9 +12,9 @@
 TBD
 
 ## Dependencies
-* [Angular 2](https://angular.io) (2.0.2)
-* [Bootstrap 4](https://v4-alpha.getbootstrap.com) (4.0.0-alpha.5)
-* [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) (1.0.0-alpha.9)
+* [Angular 2](https://angular.io) (2.4.5)
+* [Bootstrap 4](https://v4-alpha.getbootstrap.com) (4.0.0-alpha.6)
+* [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) (1.0.0-alpha.19)
 
 ## Installation
 You need to install and configure the dependencies above, afterwards:
@@ -24,7 +24,7 @@ npm install --save ng2-bootstrap-growl
 After installation, add the service and the component to your module:
 ```js
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
-import {BootstrapGrowlComponent, BootstrapGrowlService} from "ng2-bootstrap-growl/ng2-bootstrap-growl";
+import {BootstrapGrowlComponent, BootstrapGrowlService} from "ng2-bootstrap-growl";
 @NgModule({
     imports: [
         // ...

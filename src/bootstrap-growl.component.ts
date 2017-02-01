@@ -3,9 +3,11 @@ import {BootstrapGrowlService} from "./bootstrap-growl.service";
 import {BootstrapAlert} from "./bootstrap-alert.model";
 
 @Component({
-    selector: 'bootstrap-growl',
+    selector: "bootstrap-growl",
     template: `<div *ngFor="let alert of alerts">
-        <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" [dismissible]="alert.dismissable"><span [innerHtml]="alert.message"></span></ngb-alert>
+        <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" [dismissible]="alert.dismissable">
+            <span [innerHtml]="alert.message"></span>
+        </ngb-alert>
     </div>`
 })
 export class BootstrapGrowlComponent implements OnInit {
@@ -25,9 +27,9 @@ export class BootstrapGrowlComponent implements OnInit {
         });
     }
 
-    closeAlert(alert: BootstrapAlert): void{
-        //service is automatically notified!
-        if(alert.dismissable) {
+    public closeAlert(alert: BootstrapAlert): void {
+        // service is automatically notified!
+        if (alert.dismissable) {
             this.growlService.removeAlert(alert);
         }
     }

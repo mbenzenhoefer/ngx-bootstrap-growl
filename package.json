@@ -1,10 +1,11 @@
 {
   "name": "ng2-bootstrap-growl",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Service to show growl with Twitter Bootsrap 4",
-  "main": "index.js",
   "scripts": {
-    "prepublish": "tsc"
+    "lint": "npm run tslint \"src/*.ts\"",
+    "tslint": "tslint",
+    "prepublish": "npm run lint && ngc && copyfiles -f src/*.js src/*.js.map src/*.d.ts src/*.metadata.json ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
     "twitter",
     "alert"
   ],
+  "main": [
+    "index.js"
+  ],
   "author": "Moritz Benzenhoefer",
   "license": "MIT",
   "bugs": {
@@ -24,13 +28,18 @@
   },
   "homepage": "https://github.com/mbenzenhoefer/ng2-bootstrap-growl#readme",
   "dependencies": {
-    "@angular/core": "^2.2.1",
-    "rxjs": "5.0.0-beta.12",
-    "zone.js": "^0.6.21"
+    "@angular/core": "^2.4.5",
+    "rxjs": "5.0.3",
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.34",
-    "typescript": "^2.0.6"
+    "@angular/common": "^2.4.5",
+    "@angular/compiler": "^2.4.5",
+    "@angular/compiler-cli": "^2.4.5",
+    "@types/core-js": "^0.9.35",
+    "copyfiles": "^1.1.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.5"
   },
-  "typings": "./ng2-bootstrap-growl.d.ts"
+  "typings": "./index.d.ts"
 }
