@@ -5,9 +5,12 @@ import {BootstrapAlert} from "./bootstrap-alert.model";
 @Component({
     selector: "bootstrap-growl",
     template: `<div *ngFor="let alert of alerts">
-        <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" [dismissible]="alert.dismissable">
-            <span [innerHtml]="alert.message"></span>
-        </ngb-alert>
+        <div class="alert alert-{{alert.type}}" [ngClass]="{'alert-dismissible': alert.dismissable}" role="alert">
+          <button type="button" class="close" data-dismiss="alert" (click)="closeAlert(alert)" *ngIf="alert.dismissable">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <span [innerHtml]="alert.message"></span>
+        </div>
     </div>`
 })
 export class BootstrapGrowlComponent implements OnInit {

@@ -13,7 +13,11 @@ import {CommonModule} from "@angular/common";
     providers: [
         BootstrapGrowlService
     ],
+    exports: [
+        BootstrapGrowlComponent
+    ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class BootstrapGrowlModule {
+
 }

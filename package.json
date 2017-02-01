@@ -1,6 +1,6 @@
 {
   "name": "ng2-bootstrap-growl",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Service to show growl with Twitter Bootsrap 4",
   "scripts": {
     "lint": "npm run tslint \"src/*.ts\"",
@@ -15,7 +15,6 @@
     "bootstrap",
     "angular2",
     "growl",
-    "twitter",
     "alert"
   ],
   "main": "index.js",
