@@ -18,9 +18,7 @@
     "twitter",
     "alert"
   ],
-  "main": [
-    "index.js"
-  ],
+  "main": "index.js",
   "author": "Moritz Benzenhoefer",
   "license": "MIT",
   "bugs": {
