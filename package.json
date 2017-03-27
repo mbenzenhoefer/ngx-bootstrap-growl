@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/mbenzenhoefer/ng2-bootstrap-growl#readme",
   "dependencies": {
-    "@angular/core": "^2.4.5",
     "rxjs": "5.0.3",
     "zone.js": "^0.7.6"
   },
@@ -37,6 +36,9 @@
     "copyfiles": "^1.1.0",
     "tslint": "^4.4.2",
     "typescript": "^2.1.5"
+  },
+  "peerDependencies": {
+    "@angular/core": "^2.4.5",
   },
   "typings": "./index.d.ts"
 }
