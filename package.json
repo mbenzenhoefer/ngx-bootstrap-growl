@@ -29,16 +29,16 @@
     "zone.js": "^0.7.6"
   },
   "devDependencies": {
-    "@angular/common": "^2.4.5",
-    "@angular/compiler": "^2.4.5",
-    "@angular/compiler-cli": "^2.4.5",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
     "@types/core-js": "^0.9.35",
     "copyfiles": "^1.1.0",
     "tslint": "^4.4.2",
     "typescript": "^2.1.5"
   },
   "peerDependencies": {
-    "@angular/core": "^2.4.5"
+    "@angular/core": "^4.0.0"
   },
   "typings": "./index.d.ts"
 }
