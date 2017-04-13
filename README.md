@@ -1,4 +1,4 @@
-# ng-bootstrap-growl - [Angular 2](http://angular.io/) service to show [Bootstrap 4](http://v4-alpha.getbootstrap.com/) growl (alert)
+# ng-bootstrap-growl - [Angular >= 2](http://angular.io/) service to show [Bootstrap 4](http://v4-alpha.getbootstrap.com/) growl (alert)
 
 ## Features
 * add custom growl alerts somewhere in your application
@@ -12,17 +12,17 @@
 TBD
 
 ## Dependencies
-* [Angular 2](https://angular.io) (2.4.5)
+* [Angular >= 2](https://angular.io) (>= 2.4.5)
 * [Bootstrap 4](https://v4-alpha.getbootstrap.com) (4.0.0-alpha.6)
 
 ## Installation
 You need to install and configure the dependencies above, afterwards:
 ```shell
-npm install --save ng2-bootstrap-growl
+npm install --save ngx-bootstrap-growl
 ```
 After installation, add the service and the component to your module:
 ```js
-import {BootstrapGrowlComponent, BootstrapGrowlService} from "ng2-bootstrap-growl";
+import {BootstrapGrowlComponent, BootstrapGrowlService} from "ngx-bootstrap-growl";
 @NgModule({
     imports: [
         // ...
