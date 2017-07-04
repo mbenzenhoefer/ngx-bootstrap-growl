@@ -1,7 +1,10 @@
-import {Injectable} from "@angular/core";
-import {BootstrapAlertType} from "./bootstrap-alert-type.enum";
-import {BootstrapAlert} from "./bootstrap-alert.model";
-import {Subject, Observable} from "rxjs";
+import { Injectable } from "@angular/core";
+import { BootstrapAlertType } from "./bootstrap-alert-type.enum";
+import { BootstrapAlert } from "./bootstrap-alert.model";
+import {
+    Subject,
+    Observable
+} from "rxjs";
 
 @Injectable()
 export class BootstrapGrowlService {
@@ -44,9 +47,9 @@ export class BootstrapGrowlService {
         let alert = {message: message, type: cssType, dismissable: dismissable};
         this.alertHolder.push(alert);
         this.alerts.next(this.alertHolder);
-        if (autoClose && autoClose > -1){
+        if (autoClose && autoClose > -1) {
             this._scheduleAlertHide(autoClose, alert);
-        }else if (this.autoClose > -1) {
+        } else if (this.autoClose > -1) {
             this._scheduleAlertHide(this.autoClose, alert);
         }
     }
