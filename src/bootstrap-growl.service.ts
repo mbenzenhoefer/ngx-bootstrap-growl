@@ -32,7 +32,7 @@ export class BootstrapGrowlService {
         }
     }
 
-    public addAlert(message: string, type: BootstrapAlertType, dismissable?: boolean): void {
+    public addAlert(message: string, type: BootstrapAlertType, autoClose?: number, dismissable?: boolean): void {
         if (this.alertHolder.length >= this.alertCount) {
             // remove the oldest alert
             this._removeAlertById(0, this.alertHolder, this.alerts);
@@ -44,7 +44,9 @@ export class BootstrapGrowlService {
         let alert = {message: message, type: cssType, dismissable: dismissable};
         this.alertHolder.push(alert);
         this.alerts.next(this.alertHolder);
-        if (this.autoClose > -1) {
+        if (autoClose && autoClose > -1){
+            this._scheduleAlertHide(autoClose, alert);
+        }else if (this.autoClose > -1) {
             this._scheduleAlertHide(this.autoClose, alert);
         }
     }
